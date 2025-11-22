@@ -14,7 +14,7 @@ html,body{
 }
 
 body{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,7 +31,7 @@ nav{
 }
 
 nav ul{
-    width: 70vw;
+    width: calc(70vw - 1rem);
     height: 35px;
     display: flex;
     justify-content: space-between;
@@ -53,26 +53,26 @@ nav a{
 
 main{
     background-color: lightgreen;
-    height: 100vh;
-    width: 100vw;   
+    height: 100%;
+    width: 100%;   
 }
 
 main a{
     text-decoration: none;
+}
+
+.hero-wrapper{
+    width: 100%;
+    position: relative;
     color: white;
 }
 
-.blue-wrapper{
-    width: 100%;
-    position: relative;
-}
-
 .blue{
-    border: 2px solid black;
     width: 100%;
     height: 95%;
     background-image: url(./Assets/Images/hero_ase25_startframe__cgkiuyndpjxy_large.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -99,7 +99,7 @@ main a{
 
 .blue-description button{
     width: 14%;
-    height: 21%;
+    height: 18%;
     background: rgb(0,113,227);
     color: white;
     border: none;
@@ -108,6 +108,138 @@ main a{
     padding: 1%;
     cursor: pointer;
 }
+
+/* 2nd img */
+
+.iphone17pro{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 95%;
+    background-image: url(./Assets/Images/hero_iphone_17_pro_2k-ltp-L.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+ .iphone17pro-description{
+    /* background-color: navy; */
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.iphone17pro-description .p1{
+    font-size: 3em;
+}
+
+.iphone17pro-description .p2{
+    font-size: 2em;
+}
+
+.iphone17pro-button-container{
+    /* background-color: red; */
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iphone17pro-description button{
+    width: 40%;
+    height: 55%;
+    background: rgb(0,113,227);
+    color: white;
+    border: none;
+    border-radius: 22px;
+    font-size: large;
+    padding: 1%;
+    cursor: pointer;
+} 
+
+/* 3rd img */
+
+.iphoneAir{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 95%;
+    background-image: url(./Assets/Images/hero_iphone_air-4k-ltp-L.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+ .iphoneAir-description{
+    /* background-color: navy; */
+    width: 70%;
+    height: 35%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.iphoneAir-description .p1{
+    font-size: 3em;
+}
+
+.iphoneAir-description .p2{
+    font-size: 2em;
+}
+
+.iphoneAir-description .p3{
+    font-size: 2em;
+}
+
+.iphoneAir-button-container{
+    /* background-color: red; */
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iphoneAir-description button{
+    width: 40%;
+    height: 50%;
+    background: rgb(0,113,227);
+    color: white;
+    border: none;
+    border-radius: 22px;
+    font-size: large;
+    padding: 1%;
+    cursor: pointer;
+} 
+
+.card-parent{
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
 
 
 /* Media Queries */

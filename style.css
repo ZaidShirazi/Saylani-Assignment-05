@@ -14,7 +14,7 @@ html,body{
 }
 
 body{
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -60,186 +60,271 @@ main{
 main a{
     text-decoration: none;
 }
+/* section1 */
 
-.hero-wrapper{
-    width: 100%;
-    position: relative;
-    color: white;
-}
 
-.blue{
+.image1{
     width: 100%;
     height: 95%;
     background-image: url(./Assets/Images/hero_ase25_startframe__cgkiuyndpjxy_large.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.blue-description{
-    /* background-color: navy; */
-    width: 70%;
-    height: 40%;
-    position: absolute;
-    top: 58%;
-    left: 15%;
+.cont-container{
+    height: 30%;
+    width: 60%;
+    /* background-color: blue; */
+    color: white;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    position: absolute; 
+    bottom: 10%;
+    left: 20%;
+
 }
 
-.blue-description .p1{
-    font-size: 4em;
+.cont-container h2{
+    font-size: 3em;
+    font-weight: 600;
 }
 
-.blue-description .p2{
-    font-size: 2em;
+.cont-container p{
+    font-size: 1.5em;
 }
 
-.blue-description button{
-    width: 14%;
-    height: 18%;
-    background: rgb(0,113,227);
-    color: white;
+.cont-container button{
+    width: 130px;
+    height: 40px;
     border: none;
-    border-radius: 22px;
-    font-size: large;
-    padding: 1%;
+    border-radius: 20px;
+    background-color: #0071e3;
+    color: white;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-/* 2nd img */
+/* image2 */
 
-.iphone17pro{
-    /* border: 2px solid black; */
+.image2{
     width: 100%;
     height: 95%;
     background-image: url(./Assets/Images/hero_iphone_17_pro_2k-ltp-L.jpg);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-
+    position: relative;
+    margin-top: 10px;
 }
 
- .iphone17pro-description{
-    /* background-color: navy; */
-    width: 70%;
-    height: 30%;
-    position: absolute;
+.cont-container2{
+    /* background-color: darkcyan; */
     top: 5%;
-    left: 15%;
+    bottom: none;
+}
+
+.button-container{
+    /* background: lightblue; */
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.iphone17pro-description .p1{
-    font-size: 3em;
-}
-
-.iphone17pro-description .p2{
-    font-size: 2em;
-}
-
-.iphone17pro-button-container{
-    /* background-color: red; */
     width: 30%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.iphone17pro-description button{
-    width: 40%;
-    height: 55%;
-    background: rgb(0,113,227);
+.button-container .buy{
+    width: 80px;
+    color: #0071e3;
+    background-color: black;
+    border: 1px solid #0071e3;
+}
+
+.button-container .buy:hover{
+    background-color: #0071e3;
     color: white;
-    border: none;
-    border-radius: 22px;
-    font-size: large;
-    padding: 1%;
-    cursor: pointer;
-} 
+}
 
-/* 3rd img */
+/* image3 */
 
-.iphoneAir{
-    /* border: 2px solid black; */
+.image3{
     width: 100%;
     height: 95%;
     background-image: url(./Assets/Images/hero_iphone_air-4k-ltp-L.jpg);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-
+    position: relative;
+    margin-top: 10px;
 }
 
- .iphoneAir-description{
-    /* background-color: navy; */
-    width: 70%;
-    height: 35%;
-    position: absolute;
-    top: 5%;
-    left: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.cont-container3{
+    /* background-color: lightcoral; */
     color: black;
+    height: 35%;
+    top: 5%;
+    bottom: none;
 }
 
-.iphoneAir-description .p1{
-    font-size: 3em;
+.button-container .buy3{
+    background-color: rgb(245,245,247);
 }
 
-.iphoneAir-description .p2{
-    font-size: 2em;
-}
-
-.iphoneAir-description .p3{
-    font-size: 2em;
-}
-
-.iphoneAir-button-container{
-    /* background-color: red; */
-    width: 30%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.iphoneAir-description button{
-    width: 40%;
-    height: 50%;
-    background: rgb(0,113,227);
+.button-container .buy3:hover{
+    background-color: #0071e3;
     color: white;
-    border: none;
-    border-radius: 22px;
-    font-size: large;
-    padding: 1%;
-    cursor: pointer;
-} 
+}
 
-.card-parent{
-    background-color: darkgray;
-    width: 100%;
+
+/* section2 */
+
+.section2{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .card{
-    width: 50%;
-    height: 100%;
-    border: 1px solid black;
+    width: 49%;
+    height: 600px;
 }
 
+/* card1 */
+
+.card1{
+    background-image: url(./Assets/Images/1st-image-apple-logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card1-content{
+    color: black;
+    /* background-color: blue; */
+    height: 30%;
+    width: 80%;
+    left: 9%;
+}
+
+/* card2 */
+
+.card2{
+
+    background-image: url(./Assets/Images/5th-image-aidpods-pro-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card2-content{
+    color: black;
+    /* background-color: blue; */
+    height: 30%;
+    width: 80%;
+    top: 5%;
+    left: 9%;
+}
+
+.card2-btnContainer{
+    width: 50%;
+}
+
+
+/* card3 */
+
+.card3{
+
+    background-image: url(./Assets/Images/promo_ipad_air_avail__6i02t7nujr62_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card3and4-content{
+    color: black;
+    /* background-color: blue; */
+    height: 30%;
+    width: 80%;
+    top: 5%;
+    left: 9%;
+}
+
+.card3and4-btnContainer{
+    width: 50%;
+}
+
+.card3and4-btnContainer .buy3{
+    background-color: rgb(197,230,240);
+}
+
+.button-container .buy4{
+    background-color: rgb(245,245,247);
+}
+
+/* card4 */
+
+.card4{
+    background-image: url(./Assets/Images/promo_apple_watch_series_11__b63hxviqvonm_small_2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* card5 */
+
+.card5{
+    background-image: url(./Assets/Images/promo_carrier__e0izvxwqosgi_small_2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.card5and6-content{
+    color: black;
+    /* background-color: blue; */
+    height: 40%;
+    width: 80%;
+    top: 5%;
+    left: 9%;
+}
+
+.card5and6-content h2{
+    font-size: 2.5em;
+}
+
+.card5and6-btnContainer button{
+    width: 150px;
+}
+
+/* card6 */
+
+.card6{
+    background-image: url(./Assets/Images/promo_iphone_tradein__bugw15ka691e_small_2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+}
 
 
 /* Media Queries */

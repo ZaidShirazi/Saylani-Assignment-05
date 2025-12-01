@@ -180,11 +180,12 @@ main a{
 /* section2 */
 
 .section2{
-    height: 100%;
+    /* height: auto; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
+    position: relative;
 }
 
 .card{
@@ -325,6 +326,139 @@ main a{
     cursor: pointer;
     margin: 5px;
 }
+
+/* Large Carousel */
+
+.large-carousel{
+    width: 100vw;
+    height: 500px;
+    /* border: 3px solid red; */
+    display: flex;
+    margin: 10px auto;
+    overflow-x: auto;
+    gap: 1em;
+    cursor: pointer;
+}
+
+/* .large-carousel::-webkit-scrollbar{
+    display: none;
+} */
+
+.large-group{
+    width: max-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    /* animation: spin 10s infinite linear; */
+    /* padding-right: 1em; */
+}
+
+.large-card{
+    background-color: cornflowerblue;
+    height: 100%;
+    /* width: max-content; */
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 900px;
+    align-content: center;
+    padding: 1em;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* @keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+} */
+
+
+.large-card1{
+    background-image: url(./Assets/Images/largeCarousel01.jpg);
+}
+
+.large-card2{
+    background-image: url(./Assets/Images/largeCarousel02.jpg);
+}
+
+.large-card3{
+    background-image: url(./Assets/Images/largeCarousel03.jpg);
+}
+
+.large-card4{
+    background-image: url(./Assets/Images/lageCarousel04.jpg);
+}
+
+
+/* Small Carousel */
+
+.sm-carousel{
+    width: 100vw;
+    height: 320px;
+    /* border: 3px solid red; */
+    display: flex;
+    margin: 10px auto;
+    overflow-x: auto;
+    gap: 1em;
+    cursor: pointer;
+}
+
+.sm-carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.sm-group{
+    width: max-content;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    /* padding-right: 1em; */
+}
+
+.sm-card{
+    background-color: cornflowerblue;
+    height: 100%;
+    /* width: max-content; */
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 500px;
+    align-content: center;
+    padding: 1em;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+
+.sm-card1{
+    background-image: url(./Assets/Images/sm_carousel_01_1960x1102.jpg);
+}
+
+.sm-card2{
+    background-image: url(./Assets/Images/sm_carousel_02_1960x1102.jpg);
+}
+
+.sm-card3{
+    background-image: url(./Assets/Images/834x472.jpg);
+}
+
+.sm-card4{
+    background-image: url(./Assets/Images/sm-carousel-4-834x472.jpg);
+}
+
+  /* Footer */
 
 
 /* Media Queries */

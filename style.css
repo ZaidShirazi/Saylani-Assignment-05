@@ -605,6 +605,120 @@ footer{
 
 /* Media Queries */
 
+
+@media (min-width: 2200px) and (max-width: 2560px){
+    body{
+        font-size: calc(0.5rem + 1vw);
+    }
+
+    nav ul{
+        height: 70px;
+    }
+
+    main,footer{
+        max-width: 2560px;
+    }
+
+    .image1{
+        background-image: url(./Assets/Images/largetall2x.jpg);
+    }
+
+    .image2{
+    background-image: url(./Assets/Images/hero_iphone_17_pro_2k-ltp-L.jpg);
+    }
+
+    .image3{
+    background-image: url(./Assets/Images/4k_images/hero_iphone_air-4k-ltp-L.jpg);
+    }
+
+    .card{
+        height: 1200px;
+    }
+
+    .card1{
+        background-image: url(./Assets/Images/4k_images/promo_holiday_2025_4k-L.jpg);
+    }
+
+    .card2{
+        background-image: url(./Assets/Images/4k_images/promo_airpodspro_3__4k-ltp-L.jpg);
+    }
+
+    .card3{
+        background-image: url(./Assets/Images/4k_images/promo_ipad_air_avail_4k-ltp-L.jpg);
+
+        & img{
+            width: 250px;
+        }
+    }
+
+    .card4 img{
+        width: 400px;
+    }
+
+    .card6{
+        background-image: url(./Assets/Images/4k_images/promo_iphone_tradein__4k-ltp-L.jpg);
+
+        & img{
+            width: 200px;
+        }
+    }
+
+    .card1-content h2{
+        font-size: 2em;
+    }
+
+    .card2-content{
+        height: 35%;
+
+        & h2{
+        font-size: 2.6em;
+        }
+    }
+
+    .card5and6-content{
+    /* background-color: blue; */
+    width: 80%;
+    height: 37%;
+    text-align: center;
+
+    & h2{
+        font-size: 2em;
+    }
+
+    .card5and6-btnContainer button{
+    width: 310px;
+    }
+  
+    }
+
+    .card5-content{
+
+        height: 36%;
+        
+        & p{
+            font-size: 1.9vw;
+        }
+    }
+    
+    .cont-container button{
+    width: 260px;
+    height: 80px;
+    border-radius: 40px;
+    }
+
+    .button-container{
+        /* background: blue; */
+        width: 530px;
+    }
+
+    .button-container .buy{
+    width: 160px;
+    height: 80px;
+    border-radius: 40px;
+    }
+
+}
+
 @media screen and (max-width: 1092px){
 
     .first-footer{
@@ -699,5 +813,63 @@ footer{
         font-size: 19.24px;
         text-align: center;
     }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .image1{
+       background-image: url(./Assets/Images/Small_images/hero_ase25_all-mob.jpg); 
+    }
+
+    .cont-container1{
+    height: 36%;
+    width: 100%;
+    /* background-color: blue; */
+    left: 0%;
+    bottom: 8%;
+
+    & h2{
+        font-size: 6.3vw;
+    }
+    }
+
+    .image2{
+       background-image: url(./Assets/Images/Small_images/hero_iphone_17_pro_all-mob.jpg); 
+    }
+
+    .image3{
+       background-image: url(./Assets/Images/Small_images/hero_iphone_air_all-mob.jpg); 
+    }
+
+    .card1{
+    background-image: url(./Assets/Images/Small_images/promo_holiday_2025__all-mob.jpg);
+    }
+
+    .card2{
+    background-image: url(./Assets/Images/Small_images/promo_airpodspro_3_all-mob.jpg);
+    }
+
+    .card3{
+    background-image: url(./Assets/Images/Small_images/promo_ipad_air_avail_all-mob.jpg);
+    }
+
+    .card4{
+    background-image: url(./Assets/Images/Small_images/promo_apple_watch_series_11__all-mob.jpg);
+    }
+
+    .card5{
+    background-image: url(./Assets/Images/Small_images/promo_carrier__all-mob.jpg);
+    }
+
+    .card6{
+    background-image: url(./Assets/Images/Small_images/promo_iphone_tradein__all-mob.jpg);
+    }
+
+    
+}
+
+@media screen and (max-width: 320px){
+    main{
+        min-width: 320px;
     }
 }
